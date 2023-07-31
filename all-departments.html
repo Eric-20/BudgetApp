@@ -28,8 +28,8 @@
     <!-- [if IE]> <p class="browserupgrade"> You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security. </p> <![endif] -->
     <main class="app-wrapper">
       <!-- BEGIN: Sidebar -->
-       <!-- BEGIN: Sidebar -->
-       <div class="sidebar-wrapper group">
+      <!-- BEGIN: Sidebar -->
+      <div class="sidebar-wrapper group">
         <div
           id="bodyOverlay"
           class="w-screen h-screen fixed top-0 bg-slate-900 bg-opacity-50 backdrop-blur-sm z-10 hidden"
@@ -98,84 +98,12 @@
                   <span>Dashboard</span>
                 </span>
                 <iconify-icon
-                class="icon-arrow"
-                icon="heroicons-outline:chevron-right"
-              ></iconify-icon>
+                  class="icon-arrow"
+                  icon="heroicons-outline:chevron-right"
+                ></iconify-icon>
               </a>
-            <ul class="sidebar-submenu">
-              <li>
-                <a href="#" class="navItem">
-                  <span class="flex items-center">
-                    <span style="color: black;">Budget</span>
-                  </span>
-                  <!-- <iconify-icon
-                  class="icon-arrow"
-                  icon="heroicons-outline:chevron-right"
-                ></iconify-icon> -->
-                </a>
-                </a>
-                <ul class="sidebar-submenu">
-                  <li>
-                    <a href="./approved-request.html" >Approved Request List</a>
-                  </li>
-                  <li>
-                    <a href="./pending-budget-request.html" >Pending Request List</a>
-                  </li>
-                  <li>
-                    <a href="./new-budget-request.html" >New Request List</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="sidebar-submenu">
-              <li>
-                <a href="#" class="navItem">
-                  <span class="flex items-center">
-                    <span style="color: black;">Department</span>
-                  </span>
-                  <!-- <iconify-icon
-                  class="icon-arrow"
-                  icon="heroicons-outline:chevron-right"
-                ></iconify-icon> -->
-                </a>
-                </a>
-                <ul class="sidebar-submenu">
-                  <li>
-                    <a href="./department-list.html" >Department List</a>
-                  </li>
-                  <li>
-                    <a href="./add-department.html" >Add Department</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="sidebar-submenu">
-              <li>
-                <a href="#" class="navItem">
-                  <span class="flex items-center">
-                    <span style="color: black;">Human Resource</span>
-                  </span>
-                  <!-- <iconify-icon
-                  class="icon-arrow"
-                  icon="heroicons-outline:chevron-right"
-                ></iconify-icon> -->
-                </a>
-                </a>
-                <ul class="sidebar-submenu">
-                  <li>
-                    <a href="./add-employee.html" >Add Employee</a>
-                  </li>
-                  <li>
-                    <a href="./all-employees.html" >Employee List</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            
-          </li>
             </li>
             <!-- Apps Area -->
-         
             <li class="sidebar-menu-title">DEPARTMENTS</li>
             <li>
               <a href="chat.html" class="navItem">
@@ -253,7 +181,6 @@
           <!-- Upgrade Your Business Plan Card Start -->
         </div>
       </div>
-      <!-- End: Sidebar -->
       <!-- End: Sidebar -->
       <!-- End: Sidebar -->
       <!-- BEGIN: Settings -->
@@ -2144,7 +2071,7 @@
                         </a>
                       </li>
                       <li class="inline-block relative text-sm text-primary-500 font-Inter ">
-                        Budget
+                        Users
                         <iconify-icon icon="heroicons-outline:chevron-right" class="relative top-[3px] text-slate-500 rtl:rotate-180"></iconify-icon>
                       </li>
                       <li class="inline-block relative text-sm text-slate-500 font-Inter dark:text-white">
@@ -2157,7 +2084,7 @@
                   <div class=" space-y-5">
                     <div class="card">
                       <header class=" card-header noborder">
-                        <h4 class="card-title">All New Budget Request List
+                        <h4 class="card-title">All System Users List
                         </h4>
                       </header>
                       <div class="card-body px-6 pb-6">
@@ -2173,26 +2100,28 @@
                                     <th scope="col" class=" table-th ">
                                       No
                                     </th>
-  
                                     <th scope="col" class=" table-th ">
-                                      Requested Date
+                                      Names
+                                    </th>
+                                    <th scope="col" class=" table-th ">
+                                      Registered Date
                                     </th>
   
                                     <th scope="col" class=" table-th ">
-                                      Needed On
-                                    </th>
-  
-                                    <th scope="col" class=" table-th ">
-                                      Estimated Amount
+                                      Email
                                     </th>
                                     <th scope="col" class=" table-th ">
-                                      Approved By
+                                      Username
                                     </th>
-  
                                     <th scope="col" class=" table-th ">
-                                      Status
+                                      Employee ID
                                     </th>
-  
+                                    <th scope="col" class=" table-th ">
+                                      Voided Date
+                                    </th>
+                                    <th scope="col" class=" table-th ">
+                                      Active
+                                    </th>
                                     <th scope="col" class=" table-th ">
                                       Action
                                     </th>
@@ -2202,15 +2131,16 @@
                                 <tbody class="bg-white divide-y divide-slate-100 dark:bg-slate-800 dark:divide-slate-700">
                                   <tr>
                                     <td class="table-td">1</td>
+                                    <td class="table-td ">Umwali Mwiza Rita</td>
                                     <td class="table-td ">03/26/2023</td>
-                                    <td class="table-td ">4/30/2023</td>
-                                    <td class="table-td ">500000</td>
-                                    <td class="table-td ">Umwali Mwiza</td>
+                                    <td class="table-td ">mwiza@gmail.com</td>
+                                    <td class="table-td ">mwiza.umwali</td>
+                                    <td class="table-td ">1</td>
+                                    <td class="table-td "></td>
                                     <td class="table-td ">
-      
                                       <div class="inline-block px-3 min-w-[90px] text-center mx-auto py-1 rounded-[999px] bg-opacity-25 text-success-500
                                 bg-success-500">
-                                        paid
+                                        True
                                       </div>
       
                                     </td>

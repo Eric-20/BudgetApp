@@ -28,8 +28,8 @@
     <!-- [if IE]> <p class="browserupgrade"> You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security. </p> <![endif] -->
     <main class="app-wrapper">
       <!-- BEGIN: Sidebar -->
-      <!-- BEGIN: Sidebar -->
-      <div class="sidebar-wrapper group">
+       <!-- BEGIN: Sidebar -->
+       <div class="sidebar-wrapper group">
         <div
           id="bodyOverlay"
           class="w-screen h-screen fixed top-0 bg-slate-900 bg-opacity-50 backdrop-blur-sm z-10 hidden"
@@ -98,12 +98,84 @@
                   <span>Dashboard</span>
                 </span>
                 <iconify-icon
+                class="icon-arrow"
+                icon="heroicons-outline:chevron-right"
+              ></iconify-icon>
+              </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="#" class="navItem">
+                  <span class="flex items-center">
+                    <span style="color: black;">Budget</span>
+                  </span>
+                  <!-- <iconify-icon
                   class="icon-arrow"
                   icon="heroicons-outline:chevron-right"
-                ></iconify-icon>
-              </a>
+                ></iconify-icon> -->
+                </a>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="./approved-request.html" >Approved Request List</a>
+                  </li>
+                  <li>
+                    <a href="./pending-budget-request.html" >Pending Request List</a>
+                  </li>
+                  <li>
+                    <a href="./new-budget-request.html" >New Request List</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="#" class="navItem">
+                  <span class="flex items-center">
+                    <span style="color: black;">Department</span>
+                  </span>
+                  <!-- <iconify-icon
+                  class="icon-arrow"
+                  icon="heroicons-outline:chevron-right"
+                ></iconify-icon> -->
+                </a>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="./department-list.html" >Department List</a>
+                  </li>
+                  <li>
+                    <a href="./add-department.html" >Add Department</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="#" class="navItem">
+                  <span class="flex items-center">
+                    <span style="color: black;">Human Resource</span>
+                  </span>
+                  <!-- <iconify-icon
+                  class="icon-arrow"
+                  icon="heroicons-outline:chevron-right"
+                ></iconify-icon> -->
+                </a>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="./add-employee.html" >Add Employee</a>
+                  </li>
+                  <li>
+                    <a href="./all-employees.html" >Employee List</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+          </li>
             </li>
             <!-- Apps Area -->
+         
             <li class="sidebar-menu-title">DEPARTMENTS</li>
             <li>
               <a href="chat.html" class="navItem">
@@ -181,6 +253,7 @@
           <!-- Upgrade Your Business Plan Card Start -->
         </div>
       </div>
+      <!-- End: Sidebar -->
       <!-- End: Sidebar -->
       <!-- End: Sidebar -->
       <!-- BEGIN: Settings -->
