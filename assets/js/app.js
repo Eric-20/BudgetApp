@@ -617,6 +617,21 @@
       },
     },
   });
+  $("#departmentValidation").validate({
+    errorElement: "span",
+    rules: {
+      name: {
+        required: true,
+      },
+      manager: {
+        required: true,
+      },
+    },
+    messages: {
+      name: "Please enter your Department Name",
+      manager: "Please select a Manager",
+    },
+  });
 
   // data table validation
   $("#data-table, .data-table").DataTable({
