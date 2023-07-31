@@ -530,7 +530,13 @@
   $("#multipleValidation").validate({
     errorElement: "span",
     rules: {
-      name: {
+      firstname: {
+        required: true,
+      },
+      lastname: {
+        required: true,
+      },
+      username: {
         required: true,
       },
       email: {
@@ -548,7 +554,9 @@
       },
     },
     messages: {
-      name: "Please enter your name",
+      firstname: "Please enter your Firstname",
+      lastname: "Please enter your Lastname",
+      username: "Please enter your Username",
       email: {
         required: "Enter your email",
         email: "Enter a valid email",
@@ -567,51 +575,45 @@
   $("#typeValidation").validate({
     errorElement: "span",
     rules: {
-      name: {
+      firstname: {
         required: true,
       },
-      number: {
+      lastname: {
         required: true,
-        number: true,
       },
-      Password: {
+      username: {
         required: true,
-        minlength: 8,
       },
-      rangeType: {
+      email: {
         required: true,
-        range: [0, 50],
+        email: true,
       },
-      specifiedLength: {
+      password: {
         required: true,
-        minlength: 3,
+        minlength: 6,
       },
-      alphabeticCharacter: {
+      confirm_password: {
         required: true,
-        number: false,
-      },
-      url: {
-        required: true,
-        url: true,
-      },
-      textMsg: {
-        required: true,
+        minlength: 6,
+        equalTo: "#password",
       },
     },
     messages: {
-      name: "Please enter your name",
-      number: {
-        required: "Please enter number",
+      firstname: "Please enter your Firstname",
+      lastname: "Please enter your Lastname",
+      username: "Please enter your Username",
+      email: {
+        required: "Enter your email",
+        email: "Enter a valid email",
       },
-      Password: {
+      password: {
         required: "Enter your password",
-        minlength: "Password should contain minimum 8 character",
+        minlength: "Password should contain minimum 6 character",
       },
-      specifiedLength: {
-        minlength: "Should contain minimum 3 character",
-      },
-      url: {
-        url: "Invalid URL",
+      confirm_password: {
+        required: "Enter your password",
+        minlength: "Password should contain minimum 6 character",
+        equalTo: "Did not match the password",
       },
     },
   });
