@@ -18,18 +18,18 @@
       rel="stylesheet"
     />
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" href="assets/css/rt-plugins.css" />
-    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/rt-plugins.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
     <!-- End : Theme CSS-->
-    <script src="assets/js/settings.js" sync></script>
+    <script src="./assets/js/settings.js" sync></script>
   </head>
 
   <body class="font-inter BudgeeDash-app" id="body_class">
     <!-- [if IE]> <p class="browserupgrade"> You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security. </p> <![endif] -->
     <main class="app-wrapper">
       <!-- BEGIN: Sidebar -->
-       <!-- BEGIN: Sidebar -->
-       <div class="sidebar-wrapper group">
+      <!-- BEGIN: Sidebar -->
+      <div class="sidebar-wrapper group">
         <div
           id="bodyOverlay"
           class="w-screen h-screen fixed top-0 bg-slate-900 bg-opacity-50 backdrop-blur-sm z-10 hidden"
@@ -128,7 +128,7 @@
               </li>
             </ul>
             <ul class="sidebar-submenu">
-              <li>
+              <li class="">
                 <a href="#" class="navItem">
                   <span class="flex items-center">
                     <span style="color: black;">Department</span>
@@ -208,7 +208,7 @@
                     class="nav-icon"
                     icon="heroicons-outline:document"
                   ></iconify-icon>
-                  <span>Projects</span>
+                  <span>Budget Tracking</span>
                 </span>
                 <iconify-icon
                   class="icon-arrow"
@@ -217,11 +217,11 @@
               </a>
               <ul class="sidebar-submenu">
                 <li>
-                  <a href="project.html">Projects</a>
+                  <a href="project.html">Budgets</a>
                 </li>
-                <li>
-                  <a href="project-details.html">Project Details</a>
-                </li>
+                <!-- <li>
+                  <a href="project-details.html">Budget Details</a>
+                </li> -->
               </ul>
             </li>
   
@@ -237,23 +237,15 @@
               class="mx-auto relative -mt-[73px]"
             />
             <div class="max-w-[160px] mx-auto mt-6">
-              <div class="widget-title font-Inter mb-1">Unlimited Access</div>
+              <div class="widget-title font-Inter mb-1">Success</div>
               <div class="text-xs font-light font-Inter">
-                Upgrade your system to business plan
+                Maintaining financial stability requires setting and sticking to realistic goals, and budget tracking serves as a reliable compass.
               </div>
-            </div>
-            <div class="mt-6">
-              <button
-                class="bg-white hover:bg-opacity-80 text-slate-900 text-sm font-Inter rounded-md w-full block py-2 font-medium"
-              >
-                Upgrade
-              </button>
             </div>
           </div>
           <!-- Upgrade Your Business Plan Card Start -->
         </div>
       </div>
-      <!-- End: Sidebar -->
       <!-- End: Sidebar -->
       <!-- End: Sidebar -->
       <!-- BEGIN: Settings -->
@@ -2144,7 +2136,7 @@
                         </a>
                       </li>
                       <li class="inline-block relative text-sm text-primary-500 font-Inter ">
-                        Budget
+                        Users
                         <iconify-icon icon="heroicons-outline:chevron-right" class="relative top-[3px] text-slate-500 rtl:rotate-180"></iconify-icon>
                       </li>
                       <li class="inline-block relative text-sm text-slate-500 font-Inter dark:text-white">
@@ -2258,23 +2250,23 @@
           </div>
         </div>
 
-        <!-- BEGIN: Footer For Desktop and tab -->
-        <footer class="md:block hidden" id="footer">
-          <div
-            class="site-footer px-6 bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-300 py-4 ltr:ml-[248px] rtl:mr-[248px]"
-          >
-            <div class="grid md:grid-cols-2 grid-cols-1 md:gap-5">
-              <div
-                class="text-center ltr:md:text-start rtl:md:text-right text-sm"
-              >
-                COPYRIGHT ©
-                <span id="thisYear"></span>
-                BudgeeDash, All rights Reserved
-              </div>
+       <!-- BEGIN: Footer For Desktop and tab -->
+       <footer class="md:block hidden" id="footer">
+        <div
+          class="site-footer px-6 bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-300 py-4 ltr:ml-[248px] rtl:mr-[248px]"
+        >
+          <div class="grid md:grid-cols-2 grid-cols-1 md:gap-5">
+            <div
+              class="text-center ltr:md:text-start rtl:md:text-right text-sm"
+            >
+              COPYRIGHT ©
+              <span id="thisYear"></span>
+              BudgeeDash, All rights Reserved
             </div>
           </div>
-        </footer>
-        <!-- END: Footer For Desktop and tab -->
+        </div>
+      </footer>
+      <!-- END: Footer For Desktop and tab -->
 
         <div
           class="bg-white bg-no-repeat custom-dropshadow footer-bg dark:bg-slate-700 flex justify-around items-center backdrop-filter backdrop-blur-[40px] fixed left-0 bottom-0 w-full z-[9999] bothrefm-0 py-[12px] px-4 md:hidden"
@@ -2335,8 +2327,8 @@
       </div>
     </main>
     <!-- scripts -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/rt-plugins.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/rt-plugins.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
